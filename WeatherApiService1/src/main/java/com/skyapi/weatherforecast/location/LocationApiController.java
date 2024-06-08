@@ -89,7 +89,7 @@ public class LocationApiController {
 				String actualFieldName = sortOption.replace("-", "");
 				
 				if (!propertyMap.containsKey(actualFieldName)) {
-					throw new BadRequestException("Invalid sort field " + actualFieldName);
+					throw new BadRequestException("Invdalid sort field " + actualFieldName);
 				}
 			}
 		} else { // sort by single field
